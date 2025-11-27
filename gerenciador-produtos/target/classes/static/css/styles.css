@@ -1,0 +1,281 @@
+/* ------------------------ */
+/* RESET + BASE */
+/* ------------------------ */
+* {
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #eef2f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------ */
+/* PAGE CONTAINER */
+/* ------------------------ */
+
+.page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 24px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* ------------------------ */
+/* HEADER */
+/* ------------------------ */
+
+.page-header {
+    padding: 24px;
+    text-align: center;
+    background: #4a90e2;
+    color: #fff;
+    border-bottom: none;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* ------------------------ */
+/* CONTENT LAYOUT */
+/* ------------------------ */
+
+.content {
+    padding: 32px;
+}
+
+/* ------------------------ */
+/* CARD LIST (LISTAGEM) */
+/* ------------------------ */
+
+#lista-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card-list {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.produto-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e1e5eb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.produto-nome {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Badge */
+.badge-warning {
+    background: #ffc868;
+    color: #6b4600;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Ações dos cards */
+.card-actions {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Mensagens */
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #e8f8ed;
+    border: 1px solid #6fcf97;
+    color: #28664b;
+}
+
+.alert-error {
+    background: #ffe9e9;
+    border: 1px solid #d96c6c;
+    color: #8a1f1f;
+}
+
+/* ------------------------ */
+/* FORMULARIO */
+/* ------------------------ */
+
+.form-card {
+    background: #fff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    border: 1px solid #e1e5eb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #cfd6e0;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+}
+
+.actions-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 14px;
+}
+
+/* ------------------------ */
+/* BOTÕES */
+/* ------------------------ */
+
+.btn {
+    padding: 10px 22px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background: #4a90e2;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #3a78bf;
+}
+
+.btn-secondary {
+    background: #e3e6eb;
+}
+
+.btn-secondary:hover {
+    background: #cdd1d7;
+}
+
+.btn-danger {
+    background: #d64545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #b93737;
+}
+
+/* ------------------------ */
+/* EMPTY STATE */
+/* ------------------------ */
+
+.empty-state {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 12px 0;
+}
+
+/* ------------------------ */
+/* MODAL */
+/* ------------------------ */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.modal {
+    background: #fff;
+    padding: 26px 32px;
+    border-radius: 10px;
+    width: 360px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.modal p {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Esconder elementos com atributo hidden */
+[hidden] {
+    display: none !important;
+}
+
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+
+.page-footer {
+    padding: 16px;
+    text-align: center;
+    background: #f1f3f6;
+    font-size: 14px;
+    color: #444;
+}

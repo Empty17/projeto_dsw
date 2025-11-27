@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<div class="page">
+    <header class="page-header">
+        <h1>Gerenciamento de Produtos</h1>
+    </header>
+
+    <main class="content">
+        <section class="form-card">
+            <h2 id="titulo-form">Incluir novo produto</h2>
+
+            <div id="mensagem-form" class="alert" hidden></div>
+
+            <form id="produto-form">
+                <div class="form-group">
+                    <label for="nome">Produto</label>
+                    <input type="text" id="nome" name="nome" />
+                </div>
+
+                <div class="form-group">
+                    <label for="fabricante">Fabricante</label>
+                    <input type="text" id="fabricante" name="fabricante" />
+                </div>
+
+
+                <div class="form-group">
+                    <label for="preco">Preço</label>
+                    <input type="text" id="preco" name="preco" placeholder="Ex.: 2500,00" />
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade">Quantidade em estoque</label>
+                    <input type="number" id="quantidade" name="quantidade" />
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição do produto</label>
+                    <textarea id="descricao" name="descricao" rows="4"></textarea>
+                </div>
+
+                <div class="actions-center">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <button type="button" class="btn btn-secondary" id="btn-voltar">Voltar</button>
+                </div>
+            </form>
+        </section>
+
+    
+    </main>
+
+    <footer class="page-footer">
+        Nome aluno 1 / Nome aluno 2 / Turma / Ano
+    </footer>
+</div>
+
+<script src="/js/produto-form.js"></script>
+</body>
+</html>

@@ -8,8 +8,6 @@ public class GerenciadorProdutosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GerenciadorProdutosApplication.class, args);
-		System.out.println("Ola");
-		System.out.println("Ola2");
 	}
 
 }

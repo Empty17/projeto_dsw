@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<div class="page">
+    <header class="page-header">
+        <h1>Gerenciamento de Produtos</h1>
+    </header>
+
+    <main class="content">
+        <section class="card-list">
+            <div id="mensagem-lista" class="alert" hidden></div>
+
+            <div id="lista-produtos">
+                <!-- Cards de produtos via JS -->
+            </div>
+
+            <div class="actions-center">
+                <button class="btn btn-primary" id="btn-novo">
+                    Incluir novo produto
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        Nome aluno 1 / Nome aluno 2 / Turma / Ano
+    </footer>
+</div>
+
+<!-- Modal de confirmação de exclusão -->
+<div id="modal-overlay" class="modal-overlay" hidden>
+    <div class="modal">
+        <p id="modal-text">Deseja excluir o produto ID ?</p>
+        <div class="modal-actions">
+            <button id="btn-modal-sim" class="btn btn-primary">SIM</button>
+            <button id="btn-modal-nao" class="btn btn-danger">NÃO</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/produtos.js"></script>
+</body>
+</html>
